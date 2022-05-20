@@ -20,7 +20,7 @@ class Customers {
         $this->customerFactory = $customerFactory;
         $this->objectManager = $objectManager;
     }
-    public function load($pageSize, $pageNum, $startDate = null, $endDate = null, $sortDir, $filterBy, $id) {
+    public function load($pageSize, $pageNum, $startDate, $endDate, $sortDir, $filterBy, $id) {
         $config = $this->helper->getConfig();
         $this->pageNum = $pageNum;
         if ($id) {
